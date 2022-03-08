@@ -1,9 +1,8 @@
 -- INSERCION DE LOS DATOS
+-- USUARIOS
+insert into usuarios (usuario, clave)
+values ('Black', '1234'),('Edinyer', '1234'),('Leonordo', '1234'),('Administrador', '1234');
 
--- TABLA DE USUARIOS
-
-
--- TABLA DE PRODUCTOS
-
-
--- TABLA DE MARCAS
+-- PRODUCTOS
+insert into productos (nombre, descripcion, precio, cantidad, pesokg, unidad, marca, imagen)
+values ('Lentejas', 'Es una planta anual herbácea de la familia fabaceae, con tallos de 30 a 40 cm, endebles, ramosos y estriados, hojas oblongas, estípulas lanceoladas, zarcillos poco arrollados, flores blancas con venas moradas, sobre un pedúnculo axilar, y fruto en vaina pequeña.', 2.0, 12, 1.0, 'kg', 'Pantera', 'lentejaspantera.jpg'), ('Harina', 'Es el polvo fino que se obtiene del cereal molido y de otros alimentos ricos en almidón.', 1.5, 10, 1.0, 'kg', 'Pan', 'harinapan.jpg'), ('Azúcar', 'Es un disacárido formado por glucosa y fructosa. Es un disacárido que no tiene poder reductor sobre el reactivo de Fehling y el reactivo de Tollens.', 1.5, 8, 1.0, 'kg', 'Montalban', 'azucarmontalban.jpg'), ('Mantequilla', 'Es una emulsión más o menos sólida considerada apta para consumo humano, producto del batido, amasado y lavado de grasas lácteas y agua, con o sin maduración biológica producida por bacterias lácticas específicas.', 3.5, 4, 0.5, 'kg', 'Mavesa', 'mantequillamavesa.jpg'), ('Pasta', 'Es un conjunto de alimentos preparados con una masa cuyo ingrediente básico es la sémola, mezclada con agua, y a la cual se puede añadir sal, huevo u otros ingredientes, conformando un producto que generalmente se cuece en agua hirviendo.', 2.0, 6, 1.0, 'kg', 'Mary', 'pastamary.jpg'), ('Pasta', 'Es un término genérico para designar numerosos líquidos grasos de orígenes diversos que no se disuelven en el agua y que tienen menor densidad que esta.', 3.8, 9, 1.0, 'l', 'Mazeite', 'aceitemazeite.jpg'), ('Mayonesa', 'Es una salsa emulsionada fría elaborada principalmente a base de huevo entero y aceite vegetal batidos. ', 3.0, 8, 0.5, 'kg', 'Kraft', 'mayonesakraft.jpg'), ('Arroz', 'Es la semilla de la planta Oryza sativa o de Oryza glaberrima. Se trata de un cereal considerado alimento básico en muchas gastronomías del mundo.', 2.7, 15, 1.0, 'kg', 'Mary', 'arrozmary.jpg'), ('Leche Larga Duración', 'Es una secreción nutritiva de color blanquecino opaco producida por las células secretoras de las glándulas mamarias de los mamíferos, incluidos los monotremas.', 3.7, 11, 1.0, 'l', 'Parmalat', 'lecheparmalat.jfif'), ('Jugo de Naranja', 'Es un jugo de frutas en forma de líquido obtenido de exprimir el interior de las naranjas, generalmente con un exprimidor.', 2.5, 7, 1.5, 'l', 'Yukery', 'jugoyukery.jfif');
