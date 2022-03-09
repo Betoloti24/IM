@@ -12,7 +12,7 @@
             <h4>Error!</h4>
             <p class="mb-0"><?php echo $_SESSION['mensaje'] ?></p>
         </div>
-    <?php session_unset(); } ?>
+    <?php session_unset(); $_SESSION['usuario'] = TRUE;} ?>
 
     <div class="container">
         <div class="row">

@@ -14,6 +14,7 @@
             $_SESSION['mensaje'] = 'El usuario y/o la contraseña no son correctos, verifique los datos y vuelva a intentarlo.';
             header("Location: ../templates/iniciarsesion.php");
         }else{
+            $_SESSION['usuario'] = TRUE;
             header("Location: ../templates/inventario.php");
         }
     }

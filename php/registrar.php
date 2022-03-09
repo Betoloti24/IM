@@ -18,6 +18,7 @@
                     $_SESSION['mensaje'] = 'Sin conexión, intente acceder en otro momento.';
                     header("Location: ../templates/registrarse.php");
                 }else{
+                    $_SESSION['usuario'] = TRUE;
                     header("Location: ../templates/inventario.php");
                 }
             }

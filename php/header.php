@@ -7,5 +7,6 @@
     <link rel="stylesheet" href="../css/sass.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="icon" href="../Img/logo.png">
+    <script src="https://kit.fontawesome.com/5a2fbf6226.js" crossorigin="anonymous"></script>
     <title><?php echo $_titulo ?></title>
 </head>

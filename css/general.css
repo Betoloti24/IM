@@ -3,39 +3,36 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .inventariomod{
     background-image: url("../Img/fondo2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .textoblanco{
     color: #F2F2F2;
 }
-
 .logo{
     width: 270px;
 }
-
+.final{
+    margin-bottom: 2.5rem !important;
+}
 h1{
     font-size: 3.5rem;
 }
-
-.final{
-    margin-bottom: 2.5rem !important;
+.enviar{
+    font-size: 1.45rem !important;
+    font-weight: bold;
 }
 
 a, a:hover{
     color: #F2F2F2;
     text-decoration: none !important;
 }
-
-.enviar{
-    font-size: 1.45rem !important;
-    font-weight: bold;
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0px !important;
 }
 
-h1,h2,h3,h4,h5,h6{
-    margin-bottom: 0px;
+.principal{
+    margin-top: 50rem !important;
 }
