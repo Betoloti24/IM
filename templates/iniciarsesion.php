@@ -23,6 +23,7 @@
                         <img class="logo my-3" src="../Img/logo-gris.png" alt="">
                     </div>
                     <div class="card-footer bg-dark text-center">
+                        
                         <h1 class="mb-0 mt-3">Iniciar Sesión</h1>
                         <form action="../php/ingresar.php" method="POST">
                             <div class="row mx-5 mt-2">

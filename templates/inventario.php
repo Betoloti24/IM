@@ -33,22 +33,22 @@
                 $_resultado = mysqli_query($conn, $_query);
 
                 while ($row = mysqli_fetch_array($_resultado)) { ?>
-                        <div class="col-2 mb-4">
-                            <div class="item card">
-                                <img src="../Img/<?php echo $row['imagen'] ?>" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-tittle mb-2"><?php echo $row['nombre'] ?> <?php echo $row['marca'] ?></h4>
-                                    <h5 class="card-subtitle text-muted"><b>Cod:</b> <?php echo $row['cod'] ?></h5>
-                                    <h5 class="card-subtitle text-muted"><b>Peso:</b> <?php echo $row['pesokg'] ?><?php echo $row['unidad'] ?></h5>
-                                    <h5 class="card-subtitle text-muted"><b>Cantidad:</b> <?php echo $row['cantidad'] ?> unidades</h5>
-                                    <h5 class="card-subtitle text-muted mb-2"><b>Precio:</b> <?php echo $row['precio'] ?>$</h5>
-                                    <div class="d-flex justify-content-end">
-                                        <button class="btn btn-primary me-1"><h5>Modificar</h5></button>
-                                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal<?php echo $row['cod'] ?>"><h5>X</h5></button>
-                                    </div>
+                    <div class="col-2 mb-4">
+                        <div class="item card">
+                            <img src="../Img/<?php echo $row['imagen'] ?>" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-tittle mb-2"><?php echo $row['nombre'] ?> <?php echo $row['marca'] ?></h4>
+                                <h5 class="card-subtitle text-muted"><b>Cod:</b> <?php echo $row['cod'] ?></h5>
+                                <h5 class="card-subtitle text-muted"><b>Peso:</b> <?php echo $row['pesokg'] ?><?php echo $row['unidad'] ?></h5>
+                                <h5 class="card-subtitle text-muted"><b>Cantidad:</b> <?php echo $row['cantidad'] ?> unidades</h5>
+                                <h5 class="card-subtitle text-muted mb-2"><b>Precio:</b> <?php echo $row['precio'] ?>$</h5>
+                                <div class="d-flex justify-content-end">
+                                    <a href="modificarproducto.php?id=<?php echo $row['cod'] ?>"><button class="btn btn-primary me-1"><h5>Modificar</h5></button></a>
+                                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal<?php echo $row['cod'] ?>"><h5>X</h5></button>
                                 </div>
                             </div>
                         </div>
+                    </div>
             <?php } ?>
 
             <?php  
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                </div>
             <?php } ?>
         </div>
 
