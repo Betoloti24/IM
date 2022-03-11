@@ -7,7 +7,7 @@
 <body class="registroinicio">
 
     <?php if(isset($_SESSION['mensaje'])) { ?>
-        <div class="alert alert-dismissible alert-danger fixed-top rounded-0">
+        <div class="alert alert-dismissible alert-danger fixed-bottom rounded-0 mb-0">
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             <h4>Error!</h4>
             <p class="mb-0"><?php echo $_SESSION['mensaje'] ?></p>
