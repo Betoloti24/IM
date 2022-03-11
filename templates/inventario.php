@@ -21,7 +21,7 @@
         <div class="row m-3" style="margin-top: 10rem !important;">
 
             <?php if(isset($_SESSION['mensaje'])) { ?>
-                <div class="alert alert-dismissible alert-<?php echo $_SESSION['color'] ?> fixed-top">
+                <div class="fixed-bottom mb-0 alert alert-dismissible rounded-0 alert-<?php echo $_SESSION['color'] ?>">
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                     <h4><?php echo $_SESSION['operacion'] ?> !!</h4>
                     <p class="mb-0"><?php echo $_SESSION['mensaje'] ?></p>
@@ -39,7 +39,7 @@
                             <div class="card-body">
                                 <h4 class="card-tittle mb-2"><?php echo $row['nombre'] ?> <?php echo $row['marca'] ?></h4>
                                 <h5 class="card-subtitle text-muted"><b>Cod:</b> <?php echo $row['cod'] ?></h5>
-                                <h5 class="card-subtitle text-muted"><b>Peso:</b> <?php echo $row['pesokg'] ?><?php echo $row['unidad'] ?></h5>
+                                <h5 class="card-subtitle text-muted"><b>Peso:</b> <?php echo $row['pesokg'] ?><?php echo strtoupper($row['unidad']) ?></h5>
                                 <h5 class="card-subtitle text-muted"><b>Cantidad:</b> <?php echo $row['cantidad'] ?> unidades</h5>
                                 <h5 class="card-subtitle text-muted mb-2"><b>Precio:</b> <?php echo $row['precio'] ?>$</h5>
                                 <div class="d-flex justify-content-end">
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                </div>
+                    </div>
             <?php } ?>
         </div>
 
